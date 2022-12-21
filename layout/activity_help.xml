@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:background="#c4c4c4">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_you_want_to_send_to_us"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     KidCode@gmail.com"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_use_this_app_for_your_kid"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/why_we_put_ads_in_this_app"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/we_give_your_kid_a_perfect"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skill_for_free"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_you_want_to_learn_with_no_ads"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_can_subscribe_for_30_per_month"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomappbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="10dp"
+        app:hideOnScroll="true"
+        >
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            />
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_account_circle"
+        app:maxImageSize="50dp"
+        android:backgroundTint="@color/white"
+        app:layout_anchor="@id/bottomappbar"
+
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
